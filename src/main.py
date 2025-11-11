@@ -4,7 +4,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 import numpy as np
-from inference import AFRREnergyPricePredictor
+from src.inference import AFRREnergyPricePredictor
 
 app = FastAPI(title="Finland aFRR Up-Price Predictor")
 
