@@ -1,0 +1,35 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finland aFRR Up Price Predictor</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>⚡ Finland aFRR Up-Price Predictor</h1>
+    <p>Provide 54 input features manually or via JSON upload.</p>
+
+    <!-- Manual Input -->
+    <textarea id="features" placeholder="Enter 54 comma-separated values..."></textarea>
+    <div class="btn-group">
+      <button onclick="predict()">Predict</button>
+      <button id="sampleBtn" onclick="loadSample()">Load Sample</button>
+      <button onclick="downloadSample()">Download Sample JSON</button>
+    </div>
+
+    <hr>
+
+    <!-- JSON Upload -->
+    <h4>Or Upload JSON File</h4>
+    <input type="file" id="jsonFile" accept=".json">
+    <button onclick="uploadFile()">Upload & Predict</button>
+
+    <h3 id="result"></h3>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

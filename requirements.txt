@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+torch
+onnxruntime
+numpy
+joblib
+jinja2
+python-multipart
